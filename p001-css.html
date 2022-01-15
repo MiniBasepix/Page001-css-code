@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page001 - [code]style.css</title>
+    <link rel="stylesheet" href="codestyle.css">
+    <link rel="icon" href="code-square.ico">
+</head>
+<body>
+    <h1>Page001 - &lt;File&gt;style.css</h1>
+    <pre>
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height:100%;
+            text-align: start;
+          }
+        
+          /* パソコンで見たときは"pc"のclassがついた画像が表示される */
+        .pc { 
+            display: block !important; 
+        }
+        .phone {
+            display: none !important;
+        }
+         
+        /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+        @media only screen and (max-width: 1440px) {
+            .pc { 
+                display: none !important; 
+            }
+            .phone { 
+                display: block !important; 
+            }
+        }
+        
+        header {
+            background-color: lightsteelblue;
+            color: rgb(80, 80, 80);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            font-family: 'Klee One';
+            position: fixed;
+            width:100%;
+            top: 0px;
+            font-weight: 700;
+            font-size: 25px;
+            position: fixed;
+        }
+        
+        body p {
+            background-color: skyblue;
+            color: lightcyan;
+            font-size: 25px;
+            margin-top: 30px;
+            font-family: 'Yomogi';
+            font-weight: 400;
+        }
+        
+        .pc p {
+            font-size: 35px;
+            font-weight: 500;
+        }
+        
+        .pc img {
+            width: 50%;
+        }
+        
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            position: absolute;
+            width: 100%;
+            font-size: 15px;
+            color: white;
+        }
+        
+        footer h5 {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        
+        .phone footer h4 {
+            font-size: 10px;
+            font-family: sans-serif;
+            color: white;
+            background: gray;
+            margin: 0;
+        }
+        
+        .pc footer h4 {
+            font-family: sans-serif;
+            color: white;
+            background: gray;
+            margin: 0;
+        }
+        
+        a {
+         color: white;
+        }
+        
+        header a {
+            color: gray;
+            text-decoration: none;
+        }
+        
+        .font-style1 {
+            font-family: 'Georama';
+        }
+        
+        #loading {
+            width: 100vw;
+            height: 100vh;
+            transition: all 1s;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+          }
+        
+          .loaded {
+            opacity: 0;
+            visibility: hidden;
+          }
+        
+        .center {
+            text-align: center;
+            padding-top: 330px;
+        }
+        
+        #center {
+            text-align: center;
+        }
+        
+        a h6 {
+            color: bark-gray;
+        }
+        
+        h1 #p001 {
+            font-size: 50px;
+            font-family: sans-selif;
+            bottom: 5px;
+            padding-top: 0px;
+        }
+    </pre>
+</body>
+</html>
